@@ -39,8 +39,36 @@
     min-height: 300px;
 }
 
+#firstName{
+    margin-top: 40px;
+}
 
-
+#formGroupOne input{
+    margin-bottom: 40px;
+}
+#titleText{
+    border-bottom: 1px solid black;
+    margin-top: 40px;
+}
+#contactInformation h4{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+#contactInformation h4,h5{
+    margin-left: 150px;
+    margin-right: 80px;
+}
+#contactInformation p, h5{
+    display: inline-block;
+}
+#sendButton{
+    width: 150px;
+    margin-left: 700px;
+}
+#buttonRow{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 //END OF THE DSS
 //!---THIS IS A PRE-PRODUCTION STYLE---!
 /* div {
@@ -57,4 +85,16 @@ footer p{
     background-color: black;
     color: white;
     text-align: right;
+}
+
+.banner{
+    background-color: darkcyan;
+    min-height: 350px;
+}
+
+.banner-text{
+    color: white;
+    margin-top: 120px;
+    margin-left: 100px;
+    font-size: 5em;
 }

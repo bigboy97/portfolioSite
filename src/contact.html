@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Colin Hoffman | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--PRE-MADE SYLESHEET THAT ARE REQUIRED FOR BOOTSTRAP 4-->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!--THIS SHEET IS NOT DOUCMENT SPECIFIC, BUT DOES CONTAIN DOCUMENT SPECIFIC IDS-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!--THIS IS THE START OF MY SITE TITLE-->
+        <div class="row">
+            <div class="col-xl-12">
+                <h1 class="text-center py-5">Colin Hoffman | Web Developer</h1>
+            </div>
+            <!--THIS IS THE END OF COL-XL12-->
+        </div>
+        <!--THIS IS THE END OF THE ROW CLASS DIVIDER-->
+        <!--THIS IS THE END OF MY SITE TITLE-->
+
+
+
+        <!--THIS STARTS THE MAIN NAVIGATION OF MY SITE-->
+        <div class="row">
+            <div class="col-xl-12 bg-info">
+                <nav class="nav">
+                    <a class="nav-link text-white" href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="pl-2">Home</span>
+                    </a>
+                    <a class="nav-link text-white" href="resume.html">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        <span class="pl-2">Resume</span>
+                    </a>
+                    <a class="nav-link text-white" href="experience.html">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="pl-2">Experience</span>
+                    </a>
+                    <a class="nav-link text-white" href="portfolio.html">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <span class="pl-2">Portfolio</span>
+                    </a>
+                    <a class="nav-link text-white" href="about.html">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        <span class="pl-2">About</span>
+                    </a>
+                    <a class="nav-link text-white" href="contact.html">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="pl-2">Contact</span>
+                    </a>
+
+                </nav>
+                <!--THIS IS THE END OF THE NAVIGATION-->
+            </div>
+            <!--tHIS IS THE END OF THE COL-XL-12-->
+        </div>
+        <!--THIS IS THE END OF THE ROW DIVIDER-->
+        <!--THIS ENDS THE MAIN NAVIGATION OF MY SITE-->
+
+
+        <!--THIS IS THE START OF MY BANNER TEXT-->
+        <div class="row">
+            <div class="col-xl-12 banner">
+                <h2 class="banner-text">Contact Me Today!
+                    <i class="fa fa-thumbs-up pl-5" aria-hidden="true"></i>
+                </h2>
+            </div>
+            <!--END COL-->
+        </div>
+        <!--END ROW-->
+        <!--THIS IS THE END OF MY BANNER TEXT-->
+
+        <!--THIS IS THE START OF MY CONTACT FORM-->
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 id="titleText">Just fill out the form bellow...</h3>
+            </div>
+            <!--END OF COL-->
+        </div>
+        <!--END OF DIV CLASS ROW-->
+        <!--END OF TITLE TEXT-->
+        <form id="contactForm" method="get" action="#">
+            <div class="form-row">
+                <div class="form-group col-md-6" id="formGroupOne">
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name">
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="exampleuser@exampledomain.com">
+                </div>
+                <!--END OF FORM GROUP-->
+                <div class="col-md-6" id="contactInformation">
+                    <h4>Contact Information:</h4>
+                    <h5>Name:</h5>
+                    <p>&nbsp;Colin Hoffman</p>
+                    <br />
+                    <h5>Email:</h5>
+                    <p>&nbsp;colin94153@gmail.com</p>
+                </div>
+                <div class="form-group col-md-8">
+                    <textarea class="form-control" rows="6" placeholder="Type your messege here" id="messege" name="messege"></textarea>
+                </div>
+                <!--END OF FORM GROUP FOR TEXT AREA-->
+            </div>
+            <!--END OF ROW-->
+            <div class="row">
+                <div class="row-md-8" id="buttonRow">
+                    <button type="submit" class="btn btn-primary" id="sendButton">Send</button>
+                </div>
+            </div>
+        </form>
+        <!--END OF FORM-->
+        <!--THIS IS THE END OF MY CONTACT FORM-->
+
+        <!--THIS IS THE START OF MY FOOTER AREA-->
+        <div class="row">
+            <div class="col-xl-12 footer">
+                <footer class="pt-3">
+                    <p>Copyright&nbsp;</p>
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                    <p> 2017 Colin Hoffman. All Rights Reserved.</p>
+                </footer>
+            </div>
+        </div>
+        <!--THIS IS THE END OF MY FOOTER AREA-->
+    </div>
+    <!--THIS IS THE END OF THE CONTAINER FLUID DIVIDER-->
+
+    <!--SCRIPTS TO BE LOADED AFTER THE DOCUMENT OBJECT MODEL IS RENDERED-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custome.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('#contactForm').validate({
+                rules:{
+                    firstName:{
+                        required: true,
+                        minlength: 2
+                    },
+                    lastName:{
+                        required: true,
+                        minlength: 2
+                    },
+                    email:{
+                        required: true,
+                        email: true
+                    },
+                    messege:{
+                        required: true,
+                        minlength: 10
+                    }
+                },
+                messages:{
+                    firstName:{
+                        required: "Please enter a first name.",
+                        minlength: "You name has to be longer then two characters"
+                    },
+                    lastName:{
+                        required: "You must enter a last name",
+                        minlength: "Your last name must be longer then two characters"
+                    },
+                    email:{
+                        required: "You must enter an email address",
+                        email: "You must enter a valid email address"
+                    },
+                    messege:{
+                        required: "You must enter a messege",
+                        minlength: "Your messege must be longer then ten characters"
+                    }
+                }
+            });//END OF FUNCTIONS TO BE RAN ON VALIDATE
+        })//END OF FUNCTIONS TO BE RAN WHEN THE DOCUMENT OBJECT MODEL IS READY;
+    </script>
+    <!--END OF THE SCRIPTS TO BE LOADED AFTER THE DOM HAS BEEN RENDERED-->
+
+</body>
+
+</html>
