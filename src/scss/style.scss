@@ -1,5 +1,6 @@
+
 //STYLES IS FOR DOCUMENT SPECIFIC ELEMENTS
-#familyPhoto{
+#familyPhoto {
     background-image: url(../img/family.JPG);
     background-repeat: no-repeat;
     background-position: center;
@@ -8,22 +9,52 @@
     background-origin: initial;
     background-size: contain;
 }
-#aboutMe{
+
+#aboutMe {
     background-color: lightgray;
 }
-#aboutMe h3{
+
+#aboutMe h3 {
     border-bottom: 1px solid black;
 }
-#aboutMe-section{
-    min-height: 450px;;
+
+#familyPhoto{
+    height: 375;
 }
+
+@media (max-width: 767px) { 
+    #familyPhoto{
+        height: 300px;
+    }
+ }
+
+
+#treePhoto{
+    background-image: url(../img/tree-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-attachment: fixed;
+    min-height: 300px;
+}
+
+
+
 //END OF THE DSS
-
-
 //!---THIS IS A PRE-PRODUCTION STYLE---!
-div{
+/* div {
     border: 1px solid black;
-}
-//END OF PRE-PRODUCTION SYTLES
+} */
 
+//END OF PRE-PRODUCTION SYTLES
 //START OF GLOBAL STYLES
+footer p{
+    display: inline-block;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: right;
+}

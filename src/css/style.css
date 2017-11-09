@@ -13,8 +13,29 @@
 #aboutMe h3 {
   border-bottom: 1px solid black; }
 
-#aboutMe-section {
-  min-height: 450px; }
+#familyPhoto {
+  height: 375; }
 
-div {
-  border: 1px solid black; }
+@media (max-width: 767px) {
+  #familyPhoto {
+    height: 300px; } }
+
+#treePhoto {
+  background-image: url(../img/tree-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  background-attachment: fixed;
+  min-height: 300px; }
+
+/* div {
+    border: 1px solid black;
+} */
+footer p {
+  display: inline-block; }
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: right; }
