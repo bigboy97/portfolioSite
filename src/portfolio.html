@@ -8,6 +8,8 @@
     <!--PRE-MADE SYLESHEET THAT ARE REQUIRED FOR BOOTSTRAP 4-->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!--STYLE SHEETS THAT ARE REQUIRED FOR PLUGINS-->
+    <link href="css/lightbox.css" type="text/css" rel="stylesheet">
     <!--THIS SHEET IS NOT DOUCMENT SPECIFIC, BUT DOES CONTAIN DOCUMENT SPECIFIC IDS-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
@@ -32,38 +34,90 @@
         <div class="row">
             <div class="col-xl-12 bg-info">
                 <nav class="nav">
-                    <a class="nav-link text-white" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span class="pl-2">Home</span></a>
-                    <a class="nav-link text-white" href="resume.html"><i class="fa fa-file-text" aria-hidden="true"></i><span class="pl-2">Resume</span></a>
-                    <a class="nav-link text-white" href="experience.html"><i class="fa fa-university" aria-hidden="true"></i><span class="pl-2">Experience</span></a>
-                    <a class="nav-link text-white" href="portfolio.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span class="pl-2">Portfolio</span></a>
-                    <a class="nav-link text-white" href="about.html"><i class="fa fa-info" aria-hidden="true"></i><span class="pl-2">About</span></a>
-                    <a class="nav-link text-white" href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i><span class="pl-2">Contact</span></a>
-                    
-                </nav><!--THIS IS THE END OF THE NAVIGATION-->
-            </div><!--tHIS IS THE END OF THE COL-XL-12-->
-        </div><!--THIS IS THE END OF THE ROW DIVIDER-->
+                    <a class="nav-link text-white" href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="pl-2">Home</span>
+                    </a>
+                    <a class="nav-link text-white" href="resume.html">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        <span class="pl-2">Resume</span>
+                    </a>
+                    <a class="nav-link text-white" href="experience.html">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="pl-2">Experience</span>
+                    </a>
+                    <a class="nav-link text-white" href="portfolio.html">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <span class="pl-2">Portfolio</span>
+                    </a>
+                    <a class="nav-link text-white" href="about.html">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        <span class="pl-2">About</span>
+                    </a>
+                    <a class="nav-link text-white" href="contact.html">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="pl-2">Contact</span>
+                    </a>
+
+                </nav>
+                <!--THIS IS THE END OF THE NAVIGATION-->
+            </div>
+            <!--tHIS IS THE END OF THE COL-XL-12-->
+        </div>
+        <!--THIS IS THE END OF THE ROW DIVIDER-->
         <!--THIS ENDS THE MAIN NAVIGATION OF MY SITE-->
 
 
+        <!--THIS IS THE START OF MY BANNER TEXT-->
+        <div class="row">
+            <div class="col-xl-12 banner">
+                <h2 class="banner-text">Check out some of my work...</h2>
+            </div>
+            <!--END COL-->
+        </div>
+        <!--END ROW-->
+        <!--THIS IS THE END OF MY BANNER TEXT-->
 
-        
+        <!--START GALLERY-->
+
+        <div class="row">
+            <div class="col-md-6 info-cont">
+                <h3 class="info-text">Photography Works</h3>
+                <h5>Click on Photos to Enlarge</h5>
+            </div>
+            <div class="col-md-6" id="flowerLinkCont">
+                <a href="img/yellowFlower.jpg" data-lightbox="yellowFlower" data-title="This is a photo taken of a flower">
+                    <div class="col" id="yellowFlower">
+                    </div><!--END COL-->
+                </a><!--END A-->
+            </div><!--END DIV COL MD 6-->
+
+        </div><!--END ROW-->
+
+
+
+        <!--END GALLERY-->
 
 
         <!--THIS IS THE START OF MY FOOTER AREA-->
         <div class="row">
             <div class="col-xl-12 footer">
                 <footer class="pt-3">
-                    <p>Copyright&nbsp;</p><i class="fa fa-copyright" aria-hidden="true"></i><p> 2017 Colin Hoffman. All Rights Reserved.</p>
+                    <p>Copyright&nbsp;</p>
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                    <p> 2017 Colin Hoffman. All Rights Reserved.</p>
                 </footer>
             </div>
         </div>
         <!--THIS IS THE END OF MY FOOTER AREA-->
-    </div><!--THIS IS THE END OF THE CONTAINER FLUID DIVIDER-->
+    </div>
+    <!--THIS IS THE END OF THE CONTAINER FLUID DIVIDER-->
 
     <!--SCRIPTS TO BE LOADED AFTER THE DOCUMENT OBJECT MODEL IS RENDERED-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/custome.js"></script>
     <!--END OF THE SCRIPTS TO BE LOADED AFTER THE DOM HAS BEEN RENDERED-->
 

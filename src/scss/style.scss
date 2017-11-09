@@ -27,8 +27,21 @@
         height: 300px;
     }
  }
-
-
+#flowerLinkCont{
+    min-height: 300px;
+    background-color: yellow;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+ #yellowFlower{
+     background-image: url(../img/yellowFlower.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-origin: initial;
+     background-attachment: initial;
+     min-height: 300px;
+ }
 #treePhoto{
     background-image: url(../img/tree-background.jpg);
     background-size: cover;
@@ -71,9 +84,9 @@
 }
 //END OF THE DSS
 //!---THIS IS A PRE-PRODUCTION STYLE---!
-/* div {
+div {
     border: 1px solid black;
-} */
+}
 
 //END OF PRE-PRODUCTION SYTLES
 //START OF GLOBAL STYLES
@@ -97,4 +110,15 @@ footer p{
     margin-top: 120px;
     margin-left: 100px;
     font-size: 5em;
+}
+
+.info-text{
+    margin-top: 45px;
+    margin-left: 54pcx;
+    color: darkcyan;
+    font-size: 4em;
+}
+
+.info-cont{
+    background-color: darkgray;
 }
