@@ -1,0 +1,20 @@
+#familyPhoto {
+  background-image: url(../img/family.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: initial;
+  background-color: lightblue;
+  background-origin: initial;
+  background-size: contain; }
+
+#aboutMe {
+  background-color: lightgray; }
+
+#aboutMe h3 {
+  border-bottom: 1px solid black; }
+
+#aboutMe-section {
+  min-height: 450px; }
+
+div {
+  border: 1px solid black; }
