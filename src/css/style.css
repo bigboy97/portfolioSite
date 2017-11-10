@@ -114,3 +114,7 @@ footer p {
 
 .info-cont {
   background-color: darkgray; }
+
+.secondary-banner {
+  background-color: #00588b;
+  min-height: 350px; }
