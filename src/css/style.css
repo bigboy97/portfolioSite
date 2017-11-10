@@ -44,6 +44,18 @@
   background-attachment: fixed;
   min-height: 300px; }
 
+#earlyLifeCol, #eduGoalsCol, #ambCol {
+  padding-top: 45px; }
+
+#earlyLifeCol {
+  background-color: lightblue; }
+
+#eduGoalsCol {
+  background-color: #adbfe6; }
+
+#ambCol {
+  background-color: #adb3e6; }
+
 #firstName {
   margin-top: 40px; }
 
@@ -73,9 +85,9 @@
   margin-top: 40px;
   margin-bottom: 40px; }
 
-div {
-  border: 1px solid black; }
-
+/* div {
+    border: 1px solid black;
+} */
 footer p {
   display: inline-block; }
 

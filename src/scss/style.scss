@@ -51,7 +51,19 @@
     background-attachment: fixed;
     min-height: 300px;
 }
+#earlyLifeCol, #eduGoalsCol, #ambCol{
+    padding-top: 45px;
+}
 
+#earlyLifeCol{
+    background-color: lightblue;
+}
+#eduGoalsCol{
+    background-color: rgb(173, 191, 230);
+}
+#ambCol{
+    background-color: rgb(173, 179, 230);
+}
 #firstName{
     margin-top: 40px;
 }
@@ -84,9 +96,9 @@
 }
 //END OF THE DSS
 //!---THIS IS A PRE-PRODUCTION STYLE---!
-div {
+/* div {
     border: 1px solid black;
-}
+} */
 
 //END OF PRE-PRODUCTION SYTLES
 //START OF GLOBAL STYLES
