@@ -118,3 +118,11 @@ footer p {
 .secondary-banner {
   background-color: #00588b;
   min-height: 350px; }
+
+.banner-text-sm {
+  color: white;
+  margin-top: 120px;
+  margin-left: 100px;
+  font-size: 3em;
+  list-style-image: none;
+  list-style: none; }
