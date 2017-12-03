@@ -32,16 +32,37 @@
         <div class="row">
             <div class="col-xl-12 bg-info">
                 <nav class="nav">
-                    <a class="nav-link text-white" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span class="pl-2">Home</span></a>
-                    <a class="nav-link text-white" href="resume.html"><i class="fa fa-file-text" aria-hidden="true"></i><span class="pl-2">Resume</span></a>
-                    <a class="nav-link text-white" href="experience.html"><i class="fa fa-university" aria-hidden="true"></i><span class="pl-2">Experience</span></a>
-                    <a class="nav-link text-white" href="portfolio.html"><i class="fa fa-briefcase" aria-hidden="true"></i><span class="pl-2">Portfolio</span></a>
-                    <a class="nav-link text-white" href="about.html"><i class="fa fa-info" aria-hidden="true"></i><span class="pl-2">About</span></a>
-                    <a class="nav-link text-white" href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i><span class="pl-2">Contact</span></a>
-                    
-                </nav><!--THIS IS THE END OF THE NAVIGATION-->
-            </div><!--tHIS IS THE END OF THE COL-XL-12-->
-        </div><!--THIS IS THE END OF THE ROW DIVIDER-->
+                    <a class="nav-link text-white" href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="pl-2">Home</span>
+                    </a>
+                    <a class="nav-link text-white" href="resume.html">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                        <span class="pl-2">Resume</span>
+                    </a>
+                    <a class="nav-link text-white" href="experience.html">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="pl-2">Experience</span>
+                    </a>
+                    <a class="nav-link text-white" href="portfolio.html">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <span class="pl-2">Portfolio</span>
+                    </a>
+                    <a class="nav-link text-white" href="about.html">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        <span class="pl-2">About</span>
+                    </a>
+                    <a class="nav-link text-white" href="contact.html">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="pl-2">Contact</span>
+                    </a>
+
+                </nav>
+                <!--THIS IS THE END OF THE NAVIGATION-->
+            </div>
+            <!--tHIS IS THE END OF THE COL-XL-12-->
+        </div>
+        <!--THIS IS THE END OF THE ROW DIVIDER-->
         <!--THIS ENDS THE MAIN NAVIGATION OF MY SITE-->
 
 
@@ -52,47 +73,156 @@
                 <!--THIS CONTAINS THE ABOUT ME INFORMATION-->
 
                 <h3 class="pt-5 px-3">About Me</h3>
-                <p class="pb-5 px-3">&nbsp;&nbsp;&nbsp;&nbsp;I am an open-minded individual with a proven track record in 
-                    designing websites and creating databases. I have strong technical skills as 
-                    well as excellent interpersonal skills. I am eager to be challenged in order to 
-                    grow and improve my communication and professional IT skills gained through 
+                <p class="pb-5 px-3">&nbsp;&nbsp;&nbsp;&nbsp;I am an open-minded individual with a proven track record in designing websites and
+                    creating databases. I have strong technical skills as well as excellent interpersonal skills. I am eager
+                    to be challenged in order to grow and improve my communication and professional IT skills gained through
                     previous experiences in the IT sector.</p>
 
-            </div><!--THIS IS THE END OF THE COL-LG-8-->
+            </div>
+            <!--THIS IS THE END OF THE COL-LG-8-->
 
             <div class="col-md-8" id="familyPhoto">
                 <!--THIS CONTAINS THE PHOTO OF COLIN'S FAMILY-->
                 <!--NOTE: THE IMG IS NOT DISPLAYED USING A HTML IMG ELEMENT-->
                 <!--I CHOSE TO USE CSS3 TO DISPLAY THE IMAGE ON THE WEBPAGE-->
-            </div><!--THIS IS THE END OF THE COL-SM-4-->
+            </div>
+            <!--THIS IS THE END OF THE COL-SM-4-->
 
-        </div><!--THIS IS THE END OF THE ROW-->
+        </div>
+        <!--THIS IS THE END OF THE ROW-->
 
         <!--THIS IS THE START OF MY PARALAX EFFET IMAGE-->
         <div class="row">
             <div class="col-xl-12" id="treePhoto">
-            </div><!--END OF CLASS COL ID TREE PHOTO-->
-        </div><!--END OF CLASS ROW-->
+            </div>
+            <!--END OF CLASS COL ID TREE PHOTO-->
+        </div>
+        <!--END OF CLASS ROW-->
         <!--THIS IS THE END OF MY IMG-->
+
+        <div class="row">
+            <div class="col-xl-12 banner" id="homeActHeading">
+                <h3 class="banner-text">I can add any off these effects to your website!!!</h3>
+            </div>
+            <!--END OF HOMEACTHEADING-->
+        </div>
+        <!--END OF HEADING ROW-->
+
+        <div class="row">
+            <div class="col-md-4 med-block-size" id="fadingEffectImage">
+                <div id="cat"></div>
+            </div>
+            <!--END OF THE FADING EFFECT IMAGE ROW-->
+            <div class="col-md-4 med-block-size" id="fadingControls">
+                <h4 class="my-5">Click The Button Bellow To Fade In-and-out the cat!</h4>
+                <button type="button" class="btn btn-primary" id="fadeControl">Toggle</button>
+            </div>
+            <!--END OF FADING CONTROLS ROW-->
+            <div class="col-md-4 med-block-size" id="fadeExplain">
+                <h4 class="my-5">How Was It Done?</h4>
+                <code>$(document).ready(function () {</code>
+                <br>
+                <code>$('#fadeControl').click(function () {</code>
+                <br>
+                <code>$('#cat').fadeToggle(3000);</code>
+                <br>
+                <code>});</code>
+                <br>
+                <code>});</code>
+            </div>
+            <!--END OF FADING CONTROLS ROW-->
+        </div>
+        <!--END OF EFFECTS ROW-->
+
+        <div class="row">
+            <div class="col-xl-12 med-block-size" id="fountainDirections">
+                <h4 class="mt-5">See If You Are Able To Click...</h4>
+                <button type="button" class="btn btn-primary mt-5" id="fountain">Click Me For Directions To The Fountain Of Youth</button>
+            </div>
+            <!--END OF FOUNTAIN COL-->
+        </div>
+        <!--END OF ROW-->
+
+        <div class="row">
+            <div class="col-md-6 med-block-size" id="foldArea">
+                <button type="button" class="btn btn-danger btn-lg mt-5" id="foldBttn">Click Me For A Fun Surprise!</button>
+                <div id="foldText">
+                    <h3 class="mt-5">:)</h3>
+                    <p>Fold me up using the jQuerry UI</p>
+                </div>
+            </div>
+            <!--THIS IS THE END OF THE FOLDAREA-->
+            <div class="col-md-6 med-block-size" id="dragArea">
+                <h3>You can move the person around thanks to the jQuery UI</h3>
+                <img src="img/person.png" alt="clipart of a man" id="person">
+            </div>
+        </div>
+        <!--THIS IS THE END OF THE EFFECTS ROW-->
+
+        <div class="row">
+            <div class="col-xl-12 med-block-size" id="shakeArea">
+                <h4 class="mt-5">Click On The Penguin To Help Warm Him Up!</h4>
+                <img src="img/penguin.png" alt="clipart of a penguin" id="penguin" class="mt-5">
+            </div>
+            <!--END OF FOUNTAIN COL-->
+        </div>
+        <!--END OF ROW-->
 
 
         <!--THIS IS THE START OF MY FOOTER AREA-->
         <div class="row">
             <div class="col-xl-12 footer">
                 <footer class="pt-3">
-                    <p>Copyright&nbsp;</p><i class="fa fa-copyright" aria-hidden="true"></i><p> 2017 Colin Hoffman. All Rights Reserved.</p>
+                    <p>Copyright&nbsp;</p>
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                    <p> 2017 Colin Hoffman. All Rights Reserved.</p>
                 </footer>
             </div>
         </div>
         <!--THIS IS THE END OF MY FOOTER AREA-->
-    </div><!--THIS IS THE END OF THE CONTAINER FLUID DIVIDER-->
+    </div>
+    <!--THIS IS THE END OF THE CONTAINER FLUID DIVIDER-->
 
     <!--SCRIPTS TO BE LOADED AFTER THE DOCUMENT OBJECT MODEL IS RENDERED-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jQueryUI/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/custome.js"></script>
     <!--END OF THE SCRIPTS TO BE LOADED AFTER THE DOM HAS BEEN RENDERED-->
+
+    <script>
+        $(document).ready(function () {
+
+            //THE BLOCK OF CODE BELOW RUNS THE FADING EFFECT ON THE HOMEPAGE
+            $('#fadeControl').click(function () {
+                $('#cat').fadeToggle(3000);
+            }); //END OF THE FUNCTIONS RUNNING ON CLICK
+
+
+            //THIS BLOCK CONTROLS THE HOVERING EFFECTS
+            $('#fountain').hover(function () {
+                $(this).css('visibility', 'hidden');
+            }, function () {
+                $(this).css('visibility', 'visible');
+            }); //END OF THE FUNCTIONS RUNNING ON CLICK
+
+
+            //THIS BLOCK CONTROLS THE EFFECTS FOR THE FOLD
+            $('#foldBttn').click(function () {
+                $("#foldText").toggle("fold");
+            }); //THIS IS THE END OF THE FUNCTION RUNNING ON CLICK
+
+            //THIS CONTROLS THE DRAGGABLE MAN
+            $('#person').draggable();
+
+
+            //THIS CONTROLS THE COLD PENGUIN
+            $('#penguin').click(function () {
+                $(this).effect( "shake" );
+            });
+        }); //END OF JQUERY READY FUNCTIONS
+    </script>
 
 </body>
 

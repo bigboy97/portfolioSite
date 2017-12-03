@@ -77,20 +77,38 @@
         <!--END ROW-->
         <!--THIS IS THE END OF MY BANNER TEXT-->
 
-        <!--THIS IS WHERE I WILL PUT INFORMATION FOR MY RESUME-->
+
+        <!--THIS IS THE START OF THE EXPERENCE TABLE-->
         <div class="row">
             <div class="col-xl-12 secondary-banner">
-                <ul class="banner-text-sm text-center">
-                    <li>
-                        <p>- James V. Brown Lib. (Intern)</p>
-                    </li>
-                    <li>
-                        <p>- Hands on work at college</p>
-                    </li>
-                </ul>
+                <table class="table table-dark mt-5 tablesorter" id="exTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name Of Company</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Time Worked</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>James V. Brown Lib.</td>
+                            <td>Intern</td>
+                            <td>Four Months</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Red Robin</td>
+                            <td>Media Creator</td>
+                            <td>Free Freelanced</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <!--THIS IS THE END OF THE CLASS COL-->
         </div>
-        <!--END INFO FOR RESUME-->
+        <!--THIS IS THE END OF THE ROW-->
 
 
         <!--THIS IS THE START OF MY FOOTER AREA-->
@@ -111,8 +129,16 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--THESE SCRIPT TAGS WILL LOAD THE TABLE SORTING WIDGET-->
+    <script src="js/tablesorter/js/jquery.tablesorter.min.js"></script>
+    <script src="js/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
     <script type="text/javascript" src="js/custome.js"></script>
     <!--END OF THE SCRIPTS TO BE LOADED AFTER THE DOM HAS BEEN RENDERED-->
+    <script>
+        $(document).ready(function () {
+            $('#exTable').tablesorter({ sortList: [[0,0], [1,0]] });
+        });//THIS CONTAINS THE FUNCTIONS TO BE RAN ON READY
+    </script>
 
 </body>
 

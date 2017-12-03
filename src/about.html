@@ -70,7 +70,9 @@
         <!--THIS IS THE START OF MY BANNER TEXT-->
         <div class="row">
             <div class="col-xl-12 banner">
-                <h2 class="banner-text">Who Am I??? <i class="fa fa-male pl-2" aria-hidden="true"></i></h2>
+                <h2 class="banner-text">Who Am I???
+                    <i class="fa fa-male pl-2" aria-hidden="true"></i>
+                </h2>
             </div>
             <!--END COL-->
         </div>
@@ -84,35 +86,54 @@
                 <h3>Early life</h3>
                 <ul>
                     <li>
-                        <p>High School<br /><span id="highSchool" style="visibility: hidden;"> I attended Midd-West High-school and graduated in 2015.</span></p>
+                        <p>High School
+                            <br />
+                            <span id="highSchool" style="visibility: hidden;"> I attended Midd-West High-school and graduated in 2015.</span>
+                        </p>
                         <button id="hsReadMe">Click Me To Read</button>
                     </li>
                     <br />
                     <li>
-                        <p>Training<br /><span id="training" style="visibility: hidden;">My last year of high school I went to a technical school where I got cretified in laying copper wiring.</span></p>
+                        <p>Training
+                            <br />
+                            <span id="training" style="visibility: hidden;">My last year of high school I went to a technical school where I got cretified in laying copper
+                                wiring.</span>
+                        </p>
                         <button id="trReadMe">Click Me To Read</button>
                     </li>
                     <br />
                     <li>
-                        <p>Work<br /><span id="work" style="visibility: hidden;">Throughout high school I worked at verious resturants as a server, bussboy, ext.</span></p>
+                        <p>Work
+                            <br />
+                            <span id="work" style="visibility: hidden;">Throughout high school I worked at verious resturants as a server, bussboy, ext.</span>
+                        </p>
                         <button id="wrkReadMe">Click Me To Read</button>
                     </li>
                 </ul>
-            </div><!--END OF COL ONE-->
+            </div>
+            <!--END OF COL ONE-->
 
             <div class="col-md-4" id="eduGoalsCol">
                 <h3>Educational Goals</h3>
-                <p>&nbsp;&nbsp;After I graduated from Penn. Tech. I plan on working for two years, and the I am going to try and persue a masers degree.</p>
-            </div><!--THIS IS THE END OF COL TWO-->
+                <div id="eduLoad"></div>
+            </div>
+            <!--THIS IS THE END OF COL TWO-->
 
             <div class="col-md-4" id="ambCol">
                 <h3>Ambitions</h3>
                 <p>&nbsp;&nbsp;I want to create tools that operate on the web to make everyday life better.</p>
-            </div><!--THIS IS THE END OF COL THREE-->
+            </div>
+            <!--THIS IS THE END OF COL THREE-->
 
         </div>
         <!--THIS IS ENDING THE ABOUT CONTENT-->
 
+
+        <div class="row">
+            <div class="col-xl-12 med-block-size">
+                <div id="map"></div>
+            </div>
+        </div>
 
         <!--THIS IS THE START OF MY FOOTER AREA-->
         <div class="row">
@@ -135,7 +156,7 @@
     <script type="text/javascript" src="js/custome.js"></script>
     <!--END OF THE SCRIPTS TO BE LOADED AFTER THE DOM HAS BEEN RENDERED-->
     <script type="text/javascript">
-
+        isHiddin = true;
         //VARS
         var hsText = document.getElementById("highSchool");
         var hsBttn = document.getElementById("hsReadMe");
@@ -150,17 +171,39 @@
         function expandHS() {
             hsText.setAttribute("style", "visibility: visable;");
         }
-        function expandtr(){
+
+        function expandtr() {
             trText.setAttribute("style", "visibility: visable;");
         }
-        function expandWrk(){
+
+        function expandWrk() {
             wrkText.setAttribute("style", "visibility: visable;");
         }
         //EVENT LISTENERS
         hsBttn.addEventListener("click", expandHS);
         trBttn.addEventListener("click", expandtr);
         wrkBttn.addEventListener("click", expandWrk);
+
+        //AJAX FUNCITONS
+        $(document).ready(function () {
+            $("#eduLoad").load("educationalGoals.html");
+        });
+
+        //GOOGLE MAP
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 41.0149267,
+                    lng: -77.3413547
+                },
+                zoom: 8
+            });
+        }
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUV-R0PgwyRz6vXtvV5PcjSEIVSWYC5LM&callback=initMap"
+    async defer></script>
 </body>
 
 </html>

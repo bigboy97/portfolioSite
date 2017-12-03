@@ -85,6 +85,72 @@
   margin-top: 40px;
   margin-bottom: 40px; }
 
+#cat {
+  background-image: url(../img/happyCat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  background-attachment: initial;
+  min-height: 350px; }
+
+#fadingControls {
+  background-color: lightblue; }
+
+#fadeExplain {
+  background-color: #adbfe6; }
+
+#fountainDirections {
+  text-align: center;
+  background-color: #adb3e6; }
+
+#foldArea {
+  background-color: #00588b;
+  text-align: center; }
+
+#foldArea h3 {
+  color: black;
+  font-size: 3em; }
+
+#foldText {
+  background-color: lightblue; }
+
+#dragArea {
+  background-image: url(../img/street.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  background-attachment: initial;
+  min-height: 350px; }
+
+#dragArea h3 {
+  background-color: white; }
+
+#person {
+  height: 300px;
+  width: auto; }
+
+#shakeArea {
+  background-image: url(../img/winterBackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  background-attachment: initial;
+  min-height: 350px;
+  text-align: center; }
+
+#shakeArea h3 {
+  background-color: white; }
+
+#penguin {
+  height: 100px;
+  width: auto; }
+
+#map {
+  height: 100%; }
+
 /* div {
     border: 1px solid black;
 } */
@@ -126,3 +192,10 @@ footer p {
   font-size: 3em;
   list-style-image: none;
   list-style: none; }
+
+.med-block-size {
+  min-height: 350px; }
+
+.active span {
+  color: black;
+  font-size: large; }

@@ -94,6 +94,73 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+#cat{
+    background-image: url(../img/happyCat.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-attachment: initial;
+    min-height: 350px;
+}
+#fadingControls{
+    background-color: lightblue;
+}
+#fadeExplain{
+    background-color: rgb(173, 191, 230);
+}
+#fountainDirections{
+    text-align: center;
+    background-color: rgb(173, 179, 230);
+}
+#foldArea{
+    background-color: rgb(0, 88, 139);
+    text-align: center;
+}
+#foldArea h3{
+    color: black;
+    font-size: 3em;
+}
+#foldText{
+    background-color: lightblue;
+}
+#dragArea{
+    background-image: url(../img/street.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-attachment: initial;
+    min-height: 350px;
+}
+#dragArea h3{
+    background-color: white;
+}
+#person{
+    height: 300px;
+    width: auto;
+}
+
+#shakeArea{
+    background-image: url(../img/winterBackground.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-attachment: initial;
+    min-height: 350px;
+    text-align: center;
+}
+#shakeArea h3{
+    background-color: white;
+}
+#penguin{
+    height: 100px;
+    width: auto;
+}
+#map{
+    height: 100%;
+}
 //END OF THE DSS
 //!---THIS IS A PRE-PRODUCTION STYLE---!
 /* div {
@@ -147,4 +214,14 @@ footer p{
     font-size: 3em;
     list-style-image: none;
     list-style: none;
+}
+
+.med-block-size{
+    min-height: 350px;
+}
+
+//Other
+.active span{ 
+    color: black;
+    font-size: large;
 }

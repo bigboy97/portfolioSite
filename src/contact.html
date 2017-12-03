@@ -5,6 +5,9 @@
     <title>Colin Hoffman | Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--JQUERY UI STYLE-->
+    <link type="text/css" href="js/jQueryUI/jquery-ui.theme.min.css" rel="stylesheet">
+    <link type="text/css" href="js/jQueryUI/jquery-ui.structure.min.css" rel="stylesheet">
     <!--PRE-MADE SYLESHEET THAT ARE REQUIRED FOR BOOTSTRAP 4-->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
@@ -93,6 +96,27 @@
                     <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name">
                     <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name">
                     <input type="email" class="form-control" name="email" id="email" placeholder="exampleuser@exampledomain.com">
+                    <input type="text" class="form-control" id="date" name="date" placeholder="03/23/1997">
+                    <input type="tel" class="form-control" name="tel" id="tel" placeholder="5705410000">
+                    <input type="text" class="form-control" id="url" name="url" placeholder="www.example.com">
+                    <label for="male">Male</label><input type="radio" class="form-control" name="gender" id="male" value="male">
+                    <label for="female">Female</label><input type="radio" class="form-control" name="gender" id="female" value="female">
+                    <br>
+                    <label for="marketing" class="mt-4">Marketing</label>
+                    <input type="checkbox" name="reason" value="marketing">
+                    <label for="design" class="ml-2">Web Design</label>
+                    <input type="checkbox" name="reason" value="design">
+                    <label for="assistant" class="ml-2">Production Assistant</label>
+                    <input type="checkbox" name="reason" value="assistant">
+                    <button class="btn btn-primary ml-5" id="checkAll">Check All</button>
+                    <label for="readyToHire">When will you be ready to hire me?</label>
+                    <br>
+                    <select name="readyToHire" id="readyToHire">
+                            <option value="today">Today</option>
+                            <option value="tommorow">Tommorow</option>
+                            <option value="month">This Month</option>
+                            <option value="year">This Year</option>
+                    </select>
                 </div>
                 <!--END OF FORM GROUP-->
                 <div class="col-md-6" id="contactInformation">
@@ -134,8 +158,7 @@
 
     <!--SCRIPTS TO BE LOADED AFTER THE DOCUMENT OBJECT MODEL IS RENDERED-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jQueryUI/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -156,6 +179,27 @@
                         required: true,
                         email: true
                     },
+                    date:{
+                      required: true,
+                      minlength: 10  
+                    },
+                    tel:{
+                        required: true,
+                        minlength: 10
+                    },
+                    url:{
+                        required: true,
+                        url: true
+                    },
+                    gender:{
+                        required: true
+                    },
+                    reason:{
+                        required: true
+                    },
+                    readyToHire:{
+                        required: true
+                    },
                     messege:{
                         required: true,
                         minlength: 10
@@ -174,12 +218,49 @@
                         required: "You must enter an email address",
                         email: "You must enter a valid email address"
                     },
+                    date:{
+                        required: "You must enter in a date",
+                        minlength: "You must enter in a date in the proper format"
+                    },
+                    tel:{
+                        required: "You must enter a phone number",
+                        minlength: "You must enter a 10 digit phone number"
+                    },
+                    url:{
+                        required: "You must enter a URL",
+                        url: "You must enter a valid url"
+                    },
+                    gender:{
+                        required: "You must select a gender"
+                    },
+                    reason:{
+                        required: "You must have at least one selected"
+                    },
+                    readyToHire:{
+                        required: "You must select a time"
+                    },
                     messege:{
                         required: "You must enter a messege",
                         minlength: "Your messege must be longer then ten characters"
                     }
                 }
             });//END OF FUNCTIONS TO BE RAN ON VALIDATE
+
+            //THIS ADDS THE DATE PICKER OPTION
+            $('#date').datepicker();
+
+            //THIS CREATES A BOX AROUND THE RADIO BUTTONS
+            $( "input[type='radio']" ).checkboxradio();
+
+            //THIS CONTROLS THE CHECK ALL BUTTON ON THE FORM
+            $("#checkAll").click(function(){
+                $('input:checkbox').prop('checked', 'checked');
+            });
+
+            //THIS IS CONTROLING THE AUTO COMPLEATE VALUES
+            $( "#messege" ).autocomplete({
+                source: [ "I am looking to hire you.", "Please contact me when you have a second.", "Can you email me a trasnscript", "What are you looking for in a company?", "When would you be ready to start?", "I checked out your website, and I am looking for somthing similar myself.", "Can you do freelance work?" ]
+            });
         })//END OF FUNCTIONS TO BE RAN WHEN THE DOCUMENT OBJECT MODEL IS READY;
     </script>
     <!--END OF THE SCRIPTS TO BE LOADED AFTER THE DOM HAS BEEN RENDERED-->
